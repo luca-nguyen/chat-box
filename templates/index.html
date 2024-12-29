@@ -32,12 +32,17 @@
 			}
 
 			.chat-container {
-				max-width: 800px;
-				margin: 20px auto;
+				width: 800px;
+				margin: 0px auto;
 				background-color: white;
 				border-radius: 15px;
 				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 				overflow: hidden;
+				/* Positioning for centering */
+				position: absolute;
+				left: 50%;
+				top: 40%;
+				transform: translate(-50%, -50%);
 			}
 
 			.chat-header {
@@ -188,11 +193,11 @@
 				
 				padding: 40px 40px;
 				display: flex;
-				align-items: center;
+				align-content: center;
 				justify-content: center;
 				z-index: 10;
-				opacity: 0;
-				visibility: hidden;
+				opacity: 0; 
+				visibility: hidden; 
 				transition: opacity 0.5s ease, visibility 0.5s ease;
 			}
 			#new-username-input {
@@ -256,7 +261,7 @@
 				margin-top: -40px; 
 				border-top-left-radius: 15px;
 				border-top-right-radius: 15px;
-				
+				display: grid;
 			}
 			.pop-header h2 {
 				color: white;
