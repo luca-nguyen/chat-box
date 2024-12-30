@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Chat Box // Python App</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.png">
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"
 			integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ=="
@@ -37,7 +38,9 @@
 				background-color: white;
 				border-radius: 15px;
 				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-				overflow: hidden;
+				overflow: visible;
+				position: relative;
+				display: grid;
 			}
 
 			.chat-header {
@@ -282,6 +285,13 @@
 				fill: rgb(173, 176, 195);
 				transition: ease 0.3s;
 			}
+
+			.signature {
+				position: absolute;
+				justify-self: center;
+				align-self: center;
+				bottom: -70px;
+			}
 		</style>
 	</head>
 	<body>
@@ -317,6 +327,7 @@
 					<button id="new-username-button">Done</button>
 				</div>
 			</div>
+			<p class="signature">Developed by Luca Nguyen (2024)</p>
 		</div>
 		<div class="black-box" id="black-box"></div>
 
