@@ -21,3 +21,12 @@ Chat Box is a real-time web chat application built with Flask and Socket.IO, fea
 | Responsive UI | Features a modern chat interface with distinct message styling for sent vs received messages. Implements message bubbles, user avatars, and system messages with different visual treatments. Messages are automatically scrolled into view. |
 | Connection Management | Handles user disconnections gracefully by removing user data from active sessions and notifying other users. Maintains consistent state across the application when users join or leave. |
 | Code Organization | Separates concerns between frontend and backend logic. Frontend handles UI updates and event triggering, while backend manages state and broadcasts. Uses clear naming conventions and modular event handlers. |
+
+## How to use
+1. Multiple users can access the chat using the live link in the repository's description.
+2. User can enter username when connected.
+
+![Screenshot of app](/images/chat_intro.png)
+
+3. Messages can be sent and unsent.
+4. Current username can be changed by clicking the "update username" button.
